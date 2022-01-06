@@ -1,0 +1,10 @@
+@use "../abstract" as v;
+
+.heading-primary {
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: v.$dark-gray;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}

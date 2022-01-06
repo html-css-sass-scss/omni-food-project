@@ -1,0 +1,55 @@
+/* Padding and Margin */
+@use "sass:math";
+
+$spaces: (2, 4, 8, 12, 16, 24, 32, 48, 64, 80, 96, 128);
+
+@each $space in $spaces {
+  .pl-#{$space} {
+    padding-left: #{math.div($space, 10)}rem;
+  }
+  .pr-#{$space} {
+    padding-right: #{math.div($space, 10)}rem;
+  }
+  .pt-#{$space} {
+    padding-top: #{math.div($space, 10)}rem;
+  }
+  .pb-#{$space} {
+    padding-bottom: #{math.div($space, 10)}rem;
+  }
+
+  .px-#{$space} {
+    padding: 0 #{math.div($space, 10)}rem;
+  }
+  .py-#{$space} {
+    padding: #{math.div($space, 10)}rem 0;
+  }
+
+  .p-#{$space} {
+    padding: #{math.div($space, 10)}rem;
+  }
+
+  .ml-#{$space} {
+    margin-left: #{math.div($space, 10)}rem;
+  }
+  .mr-#{$space} {
+    margin-right: #{math.div($space, 10)}rem;
+  }
+  .mt-#{$space} {
+    margin-top: #{math.div($space, 10)}rem;
+  }
+  .mb-#{$space} {
+    margin-bottom: #{math.div($space, 10)}rem;
+  }
+
+  .mx-#{$space} {
+    margin: 0 #{math.div($space, 10)}rem;
+  }
+
+  .my-#{$space} {
+    margin: #{math.div($space, 10)}rem 0;
+  }
+
+  .m-#{$space} {
+    margin: #{math.div($space, 10)}rem;
+  }
+}
