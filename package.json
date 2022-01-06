@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "sass:complile": "sass --watch SCSS/style.scss css/style.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "live-server": "^1.2.1",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "sass": "^1.46.0"
   }
 }
