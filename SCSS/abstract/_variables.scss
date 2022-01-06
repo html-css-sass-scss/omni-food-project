@@ -18,18 +18,16 @@ $white: #fff;
 
 $font-family: "Rubik", sans-serif;
 
-//#888
-//#767676 (lightest grey allowed on #fff)
-//#6f6f6f (lightest grey allowed on #fdf2e9)
-//#555
-//#333
+$border-radius-normal: 0.9rem;
+$border-radius-medium: 1.1rem;
+$border-radius-circle: 50%;
 
-//- Primary: #e67e22
-//- Tints:
-//  #fdf2e9
-//  #fae5d3
-//  #eb984e
-//
-//- Shades:
-//  #cf711f
-//  #45260a
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+$line-height-normal: 1;
+$line-height-small: 1.05;
+$line-height-medium: 1.2;
+$line-height-large: 1.6;

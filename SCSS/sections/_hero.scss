@@ -14,8 +14,7 @@
     &__text-box {
       &--description {
         font-size: 2rem;
-        line-height: 1.6;
-        margin-bottom: 4.8rem;
+        line-height: v.$line-height-large;
       }
     }
     &__image-box {
@@ -26,11 +25,12 @@
 
     &__delivered-meals {
       gap: 1.2rem;
+
       &--imgs {
         img {
           width: 4.8rem;
           height: 4.8rem;
-          border-radius: 50%;
+          border-radius: v.$border-radius-circle;
           border: 3px solid v.$bg-lighter;
           &:not(:last-child) {
             margin-right: -1.6rem;
@@ -39,7 +39,7 @@
       }
       &--text {
         font-size: 1.8rem;
-        font-weight: 600;
+        font-weight: v.$font-weight-semi-bold;
 
         span {
           color: v.$primary-dark;
