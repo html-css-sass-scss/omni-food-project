@@ -27,9 +27,21 @@ body {
   letter-spacing: -0.5px;
 }
 
-/* Global Reset */
-/* Typography */
-/* Layout */
+/*
+*******************************
+Global Reset
+*******************************
+*/
+/*
+*******************************
+Typography
+*******************************
+*/
+/*
+*******************************
+Layout
+*******************************
+*/
 /* Buttons */
 .btn:link, .btn:visited {
   display: inline-block;
@@ -57,9 +69,11 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
-.section-hero {
-  background-color: #fdf2e9;
-}
+/*
+*******************************
+Button
+*******************************
+*/
 .section-hero .hero {
   max-width: 130rem;
   display: grid;
@@ -95,7 +109,20 @@ body {
   color: #cf711f;
 }
 
-/* Hero Section */
+.header__logo {
+  height: 2.2rem;
+}
+
+/*
+*******************************
+Hero Section
+*******************************
+*/
+/*
+*******************************
+Header Section
+*******************************
+*/
 /* Padding and Margin */
 .pl-2 {
   padding-left: 0.2rem;
@@ -151,6 +178,14 @@ body {
 
 .m-2 {
   margin: 0.2rem;
+}
+
+.h-2 {
+  height: 0.2rem;
+}
+
+.w-2 {
+  width: 0.2rem;
 }
 
 .pl-4 {
@@ -209,6 +244,14 @@ body {
   margin: 0.4rem;
 }
 
+.h-4 {
+  height: 0.4rem;
+}
+
+.w-4 {
+  width: 0.4rem;
+}
+
 .pl-8 {
   padding-left: 0.8rem;
 }
@@ -263,6 +306,14 @@ body {
 
 .m-8 {
   margin: 0.8rem;
+}
+
+.h-8 {
+  height: 0.8rem;
+}
+
+.w-8 {
+  width: 0.8rem;
 }
 
 .pl-12 {
@@ -321,6 +372,14 @@ body {
   margin: 1.2rem;
 }
 
+.h-12 {
+  height: 1.2rem;
+}
+
+.w-12 {
+  width: 1.2rem;
+}
+
 .pl-16 {
   padding-left: 1.6rem;
 }
@@ -375,6 +434,14 @@ body {
 
 .m-16 {
   margin: 1.6rem;
+}
+
+.h-16 {
+  height: 1.6rem;
+}
+
+.w-16 {
+  width: 1.6rem;
 }
 
 .pl-24 {
@@ -433,6 +500,14 @@ body {
   margin: 2.4rem;
 }
 
+.h-24 {
+  height: 2.4rem;
+}
+
+.w-24 {
+  width: 2.4rem;
+}
+
 .pl-32 {
   padding-left: 3.2rem;
 }
@@ -487,6 +562,14 @@ body {
 
 .m-32 {
   margin: 3.2rem;
+}
+
+.h-32 {
+  height: 3.2rem;
+}
+
+.w-32 {
+  width: 3.2rem;
 }
 
 .pl-48 {
@@ -545,6 +628,14 @@ body {
   margin: 4.8rem;
 }
 
+.h-48 {
+  height: 4.8rem;
+}
+
+.w-48 {
+  width: 4.8rem;
+}
+
 .pl-64 {
   padding-left: 6.4rem;
 }
@@ -599,6 +690,14 @@ body {
 
 .m-64 {
   margin: 6.4rem;
+}
+
+.h-64 {
+  height: 6.4rem;
+}
+
+.w-64 {
+  width: 6.4rem;
 }
 
 .pl-80 {
@@ -657,6 +756,14 @@ body {
   margin: 8rem;
 }
 
+.h-80 {
+  height: 8rem;
+}
+
+.w-80 {
+  width: 8rem;
+}
+
 .pl-96 {
   padding-left: 9.6rem;
 }
@@ -711,6 +818,14 @@ body {
 
 .m-96 {
   margin: 9.6rem;
+}
+
+.h-96 {
+  height: 9.6rem;
+}
+
+.w-96 {
+  width: 9.6rem;
 }
 
 .pl-128 {
@@ -769,6 +884,14 @@ body {
   margin: 12.8rem;
 }
 
+.h-128 {
+  height: 12.8rem;
+}
+
+.w-128 {
+  width: 12.8rem;
+}
+
 .d-flex {
   display: flex;
 }
@@ -777,11 +900,36 @@ body {
   justify-content: center;
 }
 
+.jc-between {
+  justify-content: space-between;
+}
+
 .ai-center {
   align-items: center;
 }
 
-/* Padding and Margin Util classes*/
-/* Flex util classes */
+.bg-primary {
+  background-color: #fdf2e9;
+}
+
+.bg-primary-dark {
+  background-color: #fae5d3;
+}
+
+/*
+*******************************
+Padding and Margin Util classes
+*******************************
+*/
+/*
+*******************************
+Flex util classes
+*******************************
+*/
+/*
+*******************************
+BackgroundColor util classes
+*******************************
+*/
 
 /*# sourceMappingURL=style.css.map */

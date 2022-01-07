@@ -52,4 +52,12 @@ $spaces: (2, 4, 8, 12, 16, 24, 32, 48, 64, 80, 96, 128);
   .m-#{$space} {
     margin: #{math.div($space, 10)}rem;
   }
+
+  .h-#{$space} {
+    height: #{math.div($space, 10)}rem;
+  }
+
+  .w-#{$space} {
+    width: #{math.div($space, 10)}rem;
+  }
 }

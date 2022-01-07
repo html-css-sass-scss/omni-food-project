@@ -1,0 +1,9 @@
+@use "../abstract" as v;
+
+.bg-primary {
+  background-color: v.$bg-lighter;
+}
+
+.bg-primary-dark {
+  background-color: v.$bg-light;
+}

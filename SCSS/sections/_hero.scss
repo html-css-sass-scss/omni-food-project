@@ -1,8 +1,6 @@
 @use "../abstract" as v;
 
 .section-hero {
-  background-color: v.$bg-lighter;
-
   .hero {
     max-width: 130rem;
     display: grid;
