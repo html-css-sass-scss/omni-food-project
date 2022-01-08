@@ -7,16 +7,16 @@ $spaces: (2, 4, 8, 12, 16, 24, 32, 48, 64, 80, 96, 128);
 
 @each $space in $spaces {
   .pl-#{$space} {
-    padding-left: #{math.div($space, 10)}rem;
+    padding-left: #{math.div($space, 10)}rem !important;
   }
   .pr-#{$space} {
-    padding-right: #{math.div($space, 10)}rem;
+    padding-right: #{math.div($space, 10)}rem !important;
   }
   .pt-#{$space} {
-    padding-top: #{math.div($space, 10)}rem;
+    padding-top: #{math.div($space, 10)}rem !important;
   }
   .pb-#{$space} {
-    padding-bottom: #{math.div($space, 10)}rem;
+    padding-bottom: #{math.div($space, 10)}rem !important;
   }
 
   .px-#{$space} {

@@ -5,8 +5,12 @@
 /********************************/
 
 .section-testimonials {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+
   .testimonials {
-    gap: 4.8rem;
+    gap: 4.8rem 8rem;
 
     &__figure {
       &-img {
@@ -23,7 +27,27 @@
 
       &-name {
         font-size: 1.6rem;
-        color: #777;
+        color: v.$tertiary-dark;
+      }
+    }
+  }
+
+  .gallery {
+    gap: 1.6rem;
+    //padding: 1.6rem 1.6rem 1.6rem 0;
+
+    &__item {
+      overflow: hidden;
+      backface-visibility: hidden;
+
+      img {
+        display: block;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }

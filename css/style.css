@@ -374,8 +374,13 @@ a {
 /********************************/
 /*Testimonials Section*/
 /********************************/
+.section-testimonials {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
 .section-testimonials .testimonials {
-  gap: 4.8rem;
+  gap: 4.8rem 8rem;
 }
 .section-testimonials .testimonials__figure-img {
   width: 6.4rem;
@@ -389,26 +394,41 @@ a {
 }
 .section-testimonials .testimonials__figure-name {
   font-size: 1.6rem;
-  color: #777;
+  color: #6f6f6f;
+}
+.section-testimonials .gallery {
+  gap: 1.6rem;
+}
+.section-testimonials .gallery__item {
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+.section-testimonials .gallery__item img {
+  display: block;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.section-testimonials .gallery__item img:hover {
+  transform: scale(1.1);
 }
 
 /********************************/
 /*Padding and Margin Util classes*/
 /********************************/
 .pl-2 {
-  padding-left: 0.2rem;
+  padding-left: 0.2rem !important;
 }
 
 .pr-2 {
-  padding-right: 0.2rem;
+  padding-right: 0.2rem !important;
 }
 
 .pt-2 {
-  padding-top: 0.2rem;
+  padding-top: 0.2rem !important;
 }
 
 .pb-2 {
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.2rem !important;
 }
 
 .px-2 {
@@ -460,19 +480,19 @@ a {
 }
 
 .pl-4 {
-  padding-left: 0.4rem;
+  padding-left: 0.4rem !important;
 }
 
 .pr-4 {
-  padding-right: 0.4rem;
+  padding-right: 0.4rem !important;
 }
 
 .pt-4 {
-  padding-top: 0.4rem;
+  padding-top: 0.4rem !important;
 }
 
 .pb-4 {
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.4rem !important;
 }
 
 .px-4 {
@@ -524,19 +544,19 @@ a {
 }
 
 .pl-8 {
-  padding-left: 0.8rem;
+  padding-left: 0.8rem !important;
 }
 
 .pr-8 {
-  padding-right: 0.8rem;
+  padding-right: 0.8rem !important;
 }
 
 .pt-8 {
-  padding-top: 0.8rem;
+  padding-top: 0.8rem !important;
 }
 
 .pb-8 {
-  padding-bottom: 0.8rem;
+  padding-bottom: 0.8rem !important;
 }
 
 .px-8 {
@@ -588,19 +608,19 @@ a {
 }
 
 .pl-12 {
-  padding-left: 1.2rem;
+  padding-left: 1.2rem !important;
 }
 
 .pr-12 {
-  padding-right: 1.2rem;
+  padding-right: 1.2rem !important;
 }
 
 .pt-12 {
-  padding-top: 1.2rem;
+  padding-top: 1.2rem !important;
 }
 
 .pb-12 {
-  padding-bottom: 1.2rem;
+  padding-bottom: 1.2rem !important;
 }
 
 .px-12 {
@@ -652,19 +672,19 @@ a {
 }
 
 .pl-16 {
-  padding-left: 1.6rem;
+  padding-left: 1.6rem !important;
 }
 
 .pr-16 {
-  padding-right: 1.6rem;
+  padding-right: 1.6rem !important;
 }
 
 .pt-16 {
-  padding-top: 1.6rem;
+  padding-top: 1.6rem !important;
 }
 
 .pb-16 {
-  padding-bottom: 1.6rem;
+  padding-bottom: 1.6rem !important;
 }
 
 .px-16 {
@@ -716,19 +736,19 @@ a {
 }
 
 .pl-24 {
-  padding-left: 2.4rem;
+  padding-left: 2.4rem !important;
 }
 
 .pr-24 {
-  padding-right: 2.4rem;
+  padding-right: 2.4rem !important;
 }
 
 .pt-24 {
-  padding-top: 2.4rem;
+  padding-top: 2.4rem !important;
 }
 
 .pb-24 {
-  padding-bottom: 2.4rem;
+  padding-bottom: 2.4rem !important;
 }
 
 .px-24 {
@@ -780,19 +800,19 @@ a {
 }
 
 .pl-32 {
-  padding-left: 3.2rem;
+  padding-left: 3.2rem !important;
 }
 
 .pr-32 {
-  padding-right: 3.2rem;
+  padding-right: 3.2rem !important;
 }
 
 .pt-32 {
-  padding-top: 3.2rem;
+  padding-top: 3.2rem !important;
 }
 
 .pb-32 {
-  padding-bottom: 3.2rem;
+  padding-bottom: 3.2rem !important;
 }
 
 .px-32 {
@@ -844,19 +864,19 @@ a {
 }
 
 .pl-48 {
-  padding-left: 4.8rem;
+  padding-left: 4.8rem !important;
 }
 
 .pr-48 {
-  padding-right: 4.8rem;
+  padding-right: 4.8rem !important;
 }
 
 .pt-48 {
-  padding-top: 4.8rem;
+  padding-top: 4.8rem !important;
 }
 
 .pb-48 {
-  padding-bottom: 4.8rem;
+  padding-bottom: 4.8rem !important;
 }
 
 .px-48 {
@@ -908,19 +928,19 @@ a {
 }
 
 .pl-64 {
-  padding-left: 6.4rem;
+  padding-left: 6.4rem !important;
 }
 
 .pr-64 {
-  padding-right: 6.4rem;
+  padding-right: 6.4rem !important;
 }
 
 .pt-64 {
-  padding-top: 6.4rem;
+  padding-top: 6.4rem !important;
 }
 
 .pb-64 {
-  padding-bottom: 6.4rem;
+  padding-bottom: 6.4rem !important;
 }
 
 .px-64 {
@@ -972,19 +992,19 @@ a {
 }
 
 .pl-80 {
-  padding-left: 8rem;
+  padding-left: 8rem !important;
 }
 
 .pr-80 {
-  padding-right: 8rem;
+  padding-right: 8rem !important;
 }
 
 .pt-80 {
-  padding-top: 8rem;
+  padding-top: 8rem !important;
 }
 
 .pb-80 {
-  padding-bottom: 8rem;
+  padding-bottom: 8rem !important;
 }
 
 .px-80 {
@@ -1036,19 +1056,19 @@ a {
 }
 
 .pl-96 {
-  padding-left: 9.6rem;
+  padding-left: 9.6rem !important;
 }
 
 .pr-96 {
-  padding-right: 9.6rem;
+  padding-right: 9.6rem !important;
 }
 
 .pt-96 {
-  padding-top: 9.6rem;
+  padding-top: 9.6rem !important;
 }
 
 .pb-96 {
-  padding-bottom: 9.6rem;
+  padding-bottom: 9.6rem !important;
 }
 
 .px-96 {
@@ -1100,19 +1120,19 @@ a {
 }
 
 .pl-128 {
-  padding-left: 12.8rem;
+  padding-left: 12.8rem !important;
 }
 
 .pr-128 {
-  padding-right: 12.8rem;
+  padding-right: 12.8rem !important;
 }
 
 .pt-128 {
-  padding-top: 12.8rem;
+  padding-top: 12.8rem !important;
 }
 
 .pb-128 {
-  padding-bottom: 12.8rem;
+  padding-bottom: 12.8rem !important;
 }
 
 .px-128 {
