@@ -1,0 +1,23 @@
+/********************************/
+/*Featured In Section*/
+/********************************/
+
+@use "../abstract" as v;
+
+.section-featured {
+  &__heading {
+    font-size: 1.4rem;
+    font-weight: v.$font-weight-medium;
+    color: v.$light-gray;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    text-align: center;
+  }
+  &__logos {
+    img {
+      height: 3.4rem;
+      filter: brightness(0);
+      opacity: 50%;
+    }
+  }
+}

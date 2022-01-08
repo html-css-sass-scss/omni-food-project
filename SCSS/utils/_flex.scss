@@ -6,12 +6,16 @@
   display: flex;
 }
 
-.jc-center {
-  justify-content: center;
-}
+$justify-contents: (
+  center: center,
+  between: space-between,
+  around: space-around,
+);
 
-.jc-between {
-  justify-content: space-between;
+@each $key, $value in $justify-contents {
+  .jc-#{$key} {
+    justify-content: $value;
+  }
 }
 
 .ai-center {

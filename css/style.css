@@ -250,6 +250,23 @@ body {
 }
 
 /********************************/
+/*Featured In Section*/
+/********************************/
+.section-featured__heading {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  text-align: center;
+}
+.section-featured__logos img {
+  height: 3.4rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/********************************/
 /*Padding and Margin Util classes*/
 /********************************/
 .pl-2 {
@@ -1033,6 +1050,10 @@ body {
 
 .jc-between {
   justify-content: space-between;
+}
+
+.jc-around {
+  justify-content: space-around;
 }
 
 .ai-center {
