@@ -372,6 +372,27 @@ a {
 }
 
 /********************************/
+/*Testimonials Section*/
+/********************************/
+.section-testimonials .testimonials {
+  gap: 4.8rem;
+}
+.section-testimonials .testimonials__figure-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+.section-testimonials .testimonials__figure-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.section-testimonials .testimonials__figure-name {
+  font-size: 1.6rem;
+  color: #777;
+}
+
+/********************************/
 /*Padding and Margin Util classes*/
 /********************************/
 .pl-2 {
