@@ -24,6 +24,10 @@ body {
   color: #555;
 }
 
+strong {
+  font-weight: 500;
+}
+
 /********************************/
 /*Typography*/
 /********************************/
@@ -134,6 +138,25 @@ body {
 /********************************/
 /*Tags*/
 /********************************/
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #555;
+  border-radius: 100px;
+  font-weight: 700;
+}
+.tag__vegetarian {
+  background-color: #51cf66;
+}
+.tag__vegan {
+  background-color: #94d82d;
+}
+.tag__paleo {
+  background-color: #ffd43b;
+}
+
 /********************************/
 /*Hero Section*/
 /********************************/
@@ -272,6 +295,14 @@ body {
 /********************************/
 /*Meal Section*/
 /********************************/
+.section-meals .meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+}
+.section-meals .meal__card {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
 .section-meals .meal__img {
   width: 100%;
 }
@@ -285,6 +316,16 @@ body {
 }
 .section-meals .meal__attribute-list--item {
   font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.section-meals .meal__attribute-list--item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.section-meals .meal__attribute-list--icon {
+  font-size: 2.4rem;
+  color: #e67e22;
 }
 
 /********************************/

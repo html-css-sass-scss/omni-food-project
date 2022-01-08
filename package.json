@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "browser-sync": "^2.27.7",
     "prettier": "^2.5.1",
     "sass": "^1.46.0"

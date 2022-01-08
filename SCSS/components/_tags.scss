@@ -5,4 +5,21 @@
 /********************************/
 
 .tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: v.$gray;
+  border-radius: 100px;
+  font-weight: v.$font-weight-bold;
+
+  &__vegetarian {
+    background-color: v.$tag-bg-vegetarian;
+  }
+  &__vegan {
+    background-color: v.$tag-bg-vegan;
+  }
+  &__paleo {
+    background-color: v.$tag-bg-paleo;
+  }
 }
