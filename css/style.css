@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
-/* color */
+/********************************/
+/* Variables */
+/********************************/
+/********************************/
+/*Global Reset*/
+/********************************/
 *,
 *::before,
 *::after {
@@ -19,6 +24,9 @@ body {
   color: #555;
 }
 
+/********************************/
+/*Typography*/
+/********************************/
 .heading-primary {
   font-size: 6.2rem;
   font-weight: 700;
@@ -27,22 +35,39 @@ body {
   letter-spacing: -0.5px;
 }
 
-/*
-*******************************
-Global Reset
-*******************************
-*/
-/*
-*******************************
-Typography
-*******************************
-*/
-/*
-*******************************
-Layout
-*******************************
-*/
-/* Buttons */
+/********************************/
+/*Layout*/
+/********************************/
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid-col-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/********************************/
+/*Button*/
+/********************************/
 .btn:link, .btn:visited {
   display: inline-block;
   text-decoration: none;
@@ -69,11 +94,9 @@ Layout
   box-shadow: inset 0 0 0 3px #fff;
 }
 
-/*
-*******************************
-Button
-*******************************
-*/
+/********************************/
+/*Hero Section*/
+/********************************/
 .section-hero .hero {
   max-width: 130rem;
   display: grid;
@@ -109,6 +132,9 @@ Button
   color: #cf711f;
 }
 
+/********************************/
+/*Header Section*/
+/********************************/
 .header__logo {
   height: 2.2rem;
 }
@@ -137,17 +163,9 @@ Button
   background-color: #cf711f;
 }
 
-/*
-*******************************
-Hero Section
-*******************************
-*/
-/*
-*******************************
-Header Section
-*******************************
-*/
-/* Padding and Margin */
+/********************************/
+/*Padding and Margin Util classes*/
+/********************************/
 .pl-2 {
   padding-left: 0.2rem;
 }
@@ -916,6 +934,9 @@ Header Section
   width: 12.8rem;
 }
 
+/********************************/
+/*Flex util classes*/
+/********************************/
 .d-flex {
   display: flex;
 }
@@ -932,6 +953,9 @@ Header Section
   align-items: center;
 }
 
+/********************************/
+/*BackgroundColor util classes*/
+/********************************/
 .bg-primary {
   background-color: #fdf2e9;
 }
@@ -939,21 +963,5 @@ Header Section
 .bg-primary-dark {
   background-color: #fae5d3;
 }
-
-/*
-*******************************
-Padding and Margin Util classes
-*******************************
-*/
-/*
-*******************************
-Flex util classes
-*******************************
-*/
-/*
-*******************************
-BackgroundColor util classes
-*******************************
-*/
 
 /*# sourceMappingURL=style.css.map */
