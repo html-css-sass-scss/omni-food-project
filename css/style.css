@@ -132,6 +132,9 @@ body {
 }
 
 /********************************/
+/*Tags*/
+/********************************/
+/********************************/
 /*Hero Section*/
 /********************************/
 .section-hero .hero {
@@ -264,6 +267,24 @@ body {
   height: 3.4rem;
   filter: brightness(0);
   opacity: 50%;
+}
+
+/********************************/
+/*Meal Section*/
+/********************************/
+.section-meals .meal__img {
+  width: 100%;
+}
+.section-meals .meal__title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #333;
+}
+.section-meals .meal__attribute-list {
+  list-style: none;
+}
+.section-meals .meal__attribute-list--item {
+  font-size: 1.8rem;
 }
 
 /********************************/

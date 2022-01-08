@@ -1,16 +1,12 @@
-const liveServer = require("live-server");
+// require the module as normal
+const bs = require("browser-sync").create();
 
-const params = {
-  port: 8181, // Set the server port. Defaults to 8080.
-  host: "localhost", // Set the address to bind to. Defaults to 0.0.0.0 or process.env.IP.
-  // root: "/public", // Set root directory that's being served. Defaults to cwd.
-  open: false, // When false, it won't load your browser by default.
-  ignore: "my/templates,node_modules", // comma-separated string for paths to ignore
-  file: "index.html", // When set, serve this file (server root relative) for every 404 (useful for single-page applications)
-  // wait: 1000, // Waits for all changes, before reloading. Defaults to 0 sec.
-  // mount: [['/components', './node_modules']], // Mount a directory to a route.
-  logLevel: 2, // 0 = errors only, 1 = some, 2 = lots,
-  watch: "css,img,js,SCSS",
+const config = {
+  // watch: true,
+  files: ["css/style.css", "js/*.js", "index.html"],
+  port: 8080,
+  server: ".",
 };
 
-liveServer.start(params);
+// .init starts the server
+bs.init(config);
