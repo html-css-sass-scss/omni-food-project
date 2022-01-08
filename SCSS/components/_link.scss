@@ -1,0 +1,22 @@
+@use "../abstract" as v;
+
+/********************************/
+/*Link*/
+/********************************/
+
+.link {
+  &:link,
+  &:visited {
+    display: inline-block;
+    color: v.$primary;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 4px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover,
+  &:active {
+    color: v.$primary-dark;
+    border-bottom: 1px solid transparent;
+  }
+}

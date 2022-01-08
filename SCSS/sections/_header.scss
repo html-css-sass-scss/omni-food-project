@@ -11,14 +11,12 @@
 
   .main-nav {
     &__list {
-      list-style: none;
       gap: 3.2rem;
 
       &--link {
         &:link,
         &:visited {
           display: inline-block;
-          text-decoration: none;
           font-size: 1.8rem;
           color: v.$dark-gray;
           font-weight: v.$font-weight-medium;

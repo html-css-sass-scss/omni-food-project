@@ -28,6 +28,14 @@ strong {
   font-weight: 500;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 /********************************/
 /*Typography*/
 /********************************/
@@ -66,6 +74,10 @@ strong {
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /********************************/
@@ -111,13 +123,12 @@ strong {
 /********************************/
 .btn:link, .btn:visited {
   display: inline-block;
-  text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   outline: 0;
-  transition: background-color 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .btn--primary:link, .btn--primary:visited {
   background-color: #e67e22;
@@ -155,6 +166,21 @@ strong {
 }
 .tag__paleo {
   background-color: #ffd43b;
+}
+
+/********************************/
+/*Link*/
+/********************************/
+.link:link, .link:visited {
+  display: inline-block;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 4px;
+  transition: all 0.3s ease-in-out;
+}
+.link:hover, .link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
 }
 
 /********************************/
@@ -202,12 +228,10 @@ strong {
   height: 2.2rem;
 }
 .header .main-nav__list {
-  list-style: none;
   gap: 3.2rem;
 }
 .header .main-nav__list--link:link, .header .main-nav__list--link:visited {
   display: inline-block;
-  text-decoration: none;
   font-size: 1.8rem;
   color: #333;
   font-weight: 500;
@@ -296,9 +320,14 @@ strong {
 /*Meal Section*/
 /********************************/
 .section-meals .meal {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.07);
   border-radius: 11px;
   overflow: hidden;
+  transition: all 0.4s;
+}
+.section-meals .meal:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
 }
 .section-meals .meal__card {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
@@ -310,9 +339,6 @@ strong {
   font-size: 2.4rem;
   font-weight: 600;
   color: #333;
-}
-.section-meals .meal__attribute-list {
-  list-style: none;
 }
 .section-meals .meal__attribute-list--item {
   font-size: 1.8rem;
@@ -326,6 +352,23 @@ strong {
 .section-meals .meal__attribute-list--icon {
   font-size: 2.4rem;
   color: #e67e22;
+}
+.section-meals .diets__list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.section-meals .diets__list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+.section-meals .diets__list-item-icon {
+  font-size: 3rem;
+  color: #e67e22;
+}
+.section-meals .all-recipes {
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 /********************************/
@@ -1104,6 +1147,10 @@ strong {
 /********************************/
 .d-flex {
   display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
 }
 
 .jc-center {
