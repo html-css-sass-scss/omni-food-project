@@ -2,6 +2,8 @@
 /*Layout*/
 /********************************/
 
+@use "../abstract" as v;
+
 .container {
   max-width: 120rem;
   padding: 0 3.2rem;
@@ -10,7 +12,15 @@
 
 .grid {
   display: grid;
-  gap: 9.6rem;
+  gap: v.$grid-row-gap v.$grid-column-gap;
+}
+
+.grid-ai-center {
+  align-items: center;
+}
+
+.grid-ji-center {
+  justify-items: center;
 }
 
 $grid-columns: (1, 2, 3, 4);

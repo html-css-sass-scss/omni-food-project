@@ -1,0 +1,56 @@
+/********************************/
+/*How it works Section*/
+/********************************/
+
+@use "../abstract" as v;
+
+@mixin img-box-circle {
+  content: "";
+  display: block;
+  @include v.position-absolute-center;
+  border-radius: v.$border-radius-circle;
+}
+
+.section-how {
+  &__text-box {
+    &--step-number {
+      font-size: 8.6rem;
+      font-weight: v.$font-weight-semi-bold;
+      color: #ddd;
+      margin-bottom: 1.2rem;
+    }
+    &--step-description {
+      font-size: 1.8rem;
+      line-height: v.$line-height-large;
+    }
+  }
+  &__img-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //display: grid;
+    //justify-items: center;
+    //align-items: center;
+
+    &::before {
+      @include img-box-circle;
+      background-color: v.$bg-lighter;
+      width: 60%;
+      padding-bottom: 60%;
+      z-index: -2;
+    }
+
+    &::after {
+      @include img-box-circle;
+      background-color: v.$bg-light;
+      width: 50%;
+      padding-bottom: 50%;
+      z-index: -1;
+    }
+
+    &--img {
+      width: 35%;
+    }
+  }
+}
