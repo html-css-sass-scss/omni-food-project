@@ -1,6 +1,13 @@
+@use "variables" as v;
+
 @mixin position-absolute-center {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+@mixin focus-state($color: v.$primary) {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba($color, 0.5);
 }

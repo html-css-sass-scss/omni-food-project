@@ -31,6 +31,10 @@
   justify-self: end;
 }
 
+.grid-as-end {
+  align-self: end;
+}
+
 $grid-columns: (1, 2, 3, 4);
 @each $el in $grid-columns {
   .grid-col-#{$el} {

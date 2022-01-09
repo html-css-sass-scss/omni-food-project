@@ -4,42 +4,88 @@
 /*Button*/
 /********************************/
 
+@mixin btn {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: v.$border-radius-normal;
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin btn-primary {
+  background-color: v.$primary;
+  color: v.$white;
+}
+
+@mixin btn-primary-hover {
+  background-color: v.$primary-dark;
+}
+
+@mixin btn-outline {
+  background-color: v.$white;
+  color: v.$gray;
+}
+
+@mixin btn-outline-hover {
+  background-color: v.$bg-lighter;
+  box-shadow: inset 0 0 0 3px v.$white;
+}
+
 .btn {
+  @include btn;
+  border: none;
+  cursor: pointer;
+
   &:link,
   &:visited {
-    display: inline-block;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 1.6rem 3.2rem;
-    border-radius: v.$border-radius-normal;
-    outline: 0;
-    transition: all 0.3s ease-in-out;
+    @include btn;
   }
 
   &--primary {
+    @include btn-primary;
+
     &:link,
     &:visited {
-      background-color: v.$primary;
-      color: v.$white;
+      @include btn-primary;
     }
 
     &:hover,
     &:active {
-      background-color: v.$primary-dark;
+      @include btn-primary-hover;
     }
   }
 
   &--outline {
+    @include btn-outline;
+
     &:link,
     &:visited {
-      background-color: v.$white;
-      color: v.$gray;
+      @include btn-outline;
     }
 
     &:hover,
     &:active {
-      background-color: v.$bg-lighter;
-      box-shadow: inset 0 0 0 3px v.$white;
+      @include btn-outline-hover;
     }
+  }
+
+  &[type="submit"] {
+    background-color: v.$secondary;
+    color: v.$bg-lighter;
+    padding: 1.2rem;
+
+    &:hover {
+      background-color: v.$bg-lighter;
+      color: v.$secondary;
+    }
+
+    &:focus {
+      @include v.focus-state(rgba(253, 242, 233));
+    }
+  }
+
+  &:focus {
+    @include v.focus-state;
   }
 }

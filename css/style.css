@@ -109,6 +109,10 @@ a {
   justify-self: end;
 }
 
+.grid-as-end {
+  align-self: end;
+}
+
 .grid-col-1 {
   grid-template-columns: repeat(1, 1fr);
 }
@@ -128,14 +132,27 @@ a {
 /********************************/
 /*Button*/
 /********************************/
+.btn {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
 .btn:link, .btn:visited {
   display: inline-block;
   font-size: 2rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
-  outline: 0;
   transition: all 0.3s ease-in-out;
+}
+.btn--primary {
+  background-color: #e67e22;
+  color: #fff;
 }
 .btn--primary:link, .btn--primary:visited {
   background-color: #e67e22;
@@ -144,6 +161,10 @@ a {
 .btn--primary:hover, .btn--primary:active {
   background-color: #cf711f;
 }
+.btn--outline {
+  background-color: #fff;
+  color: #555;
+}
 .btn--outline:link, .btn--outline:visited {
   background-color: #fff;
   color: #555;
@@ -151,6 +172,23 @@ a {
 .btn--outline:hover, .btn--outline:active {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px #fff;
+}
+.btn[type=submit] {
+  background-color: #45260a;
+  color: #fdf2e9;
+  padding: 1.2rem;
+}
+.btn[type=submit]:hover {
+  background-color: #fdf2e9;
+  color: #45260a;
+}
+.btn[type=submit]:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 126, 34, 0.5);
 }
 
 /********************************/
@@ -509,7 +547,6 @@ a {
 /*cta Section*/
 /********************************/
 .section-cta .cta {
-  height: 50rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
   background-image: linear-gradient(to right, #eb984e, #e67e22);
@@ -517,13 +554,57 @@ a {
   overflow: hidden;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
 }
+.section-cta .cta__text-box {
+  padding: 6.4rem;
+  padding-left: 4.8rem !important;
+  color: #45260a;
+}
+.section-cta .cta__text-box .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+.section-cta .cta__text-box--text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
 .section-cta .cta__img-box {
   background-image: linear-gradient(to right, rgba(235, 152, 78, 0.35), rgba(230, 126, 34, 0.35)), url("../img/eating.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
+.section-cta .cta__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem 3.2rem;
+}
+.section-cta .cta__form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.section-cta .cta__form input,
+.section-cta .cta__form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  color: inherit;
+  border: none;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+.section-cta .cta__form input::placeholder,
+.section-cta .cta__form select::placeholder {
+  color: #aaa;
+}
+.section-cta .cta__form input:focus,
+.section-cta .cta__form select:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
 /********************************/
 /*Padding and Margin Util classes*/
 /********************************/
