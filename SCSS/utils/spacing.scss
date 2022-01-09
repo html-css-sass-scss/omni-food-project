@@ -31,16 +31,16 @@ $spaces: (2, 4, 8, 12, 16, 24, 32, 48, 64, 80, 96, 128);
   }
 
   .ml-#{$space} {
-    margin-left: #{math.div($space, 10)}rem;
+    margin-left: #{math.div($space, 10)}rem !important;
   }
   .mr-#{$space} {
-    margin-right: #{math.div($space, 10)}rem;
+    margin-right: #{math.div($space, 10)}rem !important;
   }
   .mt-#{$space} {
-    margin-top: #{math.div($space, 10)}rem;
+    margin-top: #{math.div($space, 10)}rem !important;
   }
   .mb-#{$space} {
-    margin-bottom: #{math.div($space, 10)}rem;
+    margin-bottom: #{math.div($space, 10)}rem !important;
   }
 
   .mx-#{$space} {

@@ -481,6 +481,29 @@ a {
   text-align: center;
   margin-top: 4.8rem;
 }
+.section-pricing .plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+.section-pricing .feature__icon {
+  font-size: 3.2rem;
+  background-color: #fdf2e9;
+  color: #e67e22;
+  margin-bottom: 3.1rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+.section-pricing .feature__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.section-pricing .feature__text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
 
 /********************************/
 /*Padding and Margin Util classes*/
@@ -514,19 +537,19 @@ a {
 }
 
 .ml-2 {
-  margin-left: 0.2rem;
+  margin-left: 0.2rem !important;
 }
 
 .mr-2 {
-  margin-right: 0.2rem;
+  margin-right: 0.2rem !important;
 }
 
 .mt-2 {
-  margin-top: 0.2rem;
+  margin-top: 0.2rem !important;
 }
 
 .mb-2 {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.2rem !important;
 }
 
 .mx-2 {
@@ -578,19 +601,19 @@ a {
 }
 
 .ml-4 {
-  margin-left: 0.4rem;
+  margin-left: 0.4rem !important;
 }
 
 .mr-4 {
-  margin-right: 0.4rem;
+  margin-right: 0.4rem !important;
 }
 
 .mt-4 {
-  margin-top: 0.4rem;
+  margin-top: 0.4rem !important;
 }
 
 .mb-4 {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.4rem !important;
 }
 
 .mx-4 {
@@ -642,19 +665,19 @@ a {
 }
 
 .ml-8 {
-  margin-left: 0.8rem;
+  margin-left: 0.8rem !important;
 }
 
 .mr-8 {
-  margin-right: 0.8rem;
+  margin-right: 0.8rem !important;
 }
 
 .mt-8 {
-  margin-top: 0.8rem;
+  margin-top: 0.8rem !important;
 }
 
 .mb-8 {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.8rem !important;
 }
 
 .mx-8 {
@@ -706,19 +729,19 @@ a {
 }
 
 .ml-12 {
-  margin-left: 1.2rem;
+  margin-left: 1.2rem !important;
 }
 
 .mr-12 {
-  margin-right: 1.2rem;
+  margin-right: 1.2rem !important;
 }
 
 .mt-12 {
-  margin-top: 1.2rem;
+  margin-top: 1.2rem !important;
 }
 
 .mb-12 {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.2rem !important;
 }
 
 .mx-12 {
@@ -770,19 +793,19 @@ a {
 }
 
 .ml-16 {
-  margin-left: 1.6rem;
+  margin-left: 1.6rem !important;
 }
 
 .mr-16 {
-  margin-right: 1.6rem;
+  margin-right: 1.6rem !important;
 }
 
 .mt-16 {
-  margin-top: 1.6rem;
+  margin-top: 1.6rem !important;
 }
 
 .mb-16 {
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.6rem !important;
 }
 
 .mx-16 {
@@ -834,19 +857,19 @@ a {
 }
 
 .ml-24 {
-  margin-left: 2.4rem;
+  margin-left: 2.4rem !important;
 }
 
 .mr-24 {
-  margin-right: 2.4rem;
+  margin-right: 2.4rem !important;
 }
 
 .mt-24 {
-  margin-top: 2.4rem;
+  margin-top: 2.4rem !important;
 }
 
 .mb-24 {
-  margin-bottom: 2.4rem;
+  margin-bottom: 2.4rem !important;
 }
 
 .mx-24 {
@@ -898,19 +921,19 @@ a {
 }
 
 .ml-32 {
-  margin-left: 3.2rem;
+  margin-left: 3.2rem !important;
 }
 
 .mr-32 {
-  margin-right: 3.2rem;
+  margin-right: 3.2rem !important;
 }
 
 .mt-32 {
-  margin-top: 3.2rem;
+  margin-top: 3.2rem !important;
 }
 
 .mb-32 {
-  margin-bottom: 3.2rem;
+  margin-bottom: 3.2rem !important;
 }
 
 .mx-32 {
@@ -962,19 +985,19 @@ a {
 }
 
 .ml-48 {
-  margin-left: 4.8rem;
+  margin-left: 4.8rem !important;
 }
 
 .mr-48 {
-  margin-right: 4.8rem;
+  margin-right: 4.8rem !important;
 }
 
 .mt-48 {
-  margin-top: 4.8rem;
+  margin-top: 4.8rem !important;
 }
 
 .mb-48 {
-  margin-bottom: 4.8rem;
+  margin-bottom: 4.8rem !important;
 }
 
 .mx-48 {
@@ -1026,19 +1049,19 @@ a {
 }
 
 .ml-64 {
-  margin-left: 6.4rem;
+  margin-left: 6.4rem !important;
 }
 
 .mr-64 {
-  margin-right: 6.4rem;
+  margin-right: 6.4rem !important;
 }
 
 .mt-64 {
-  margin-top: 6.4rem;
+  margin-top: 6.4rem !important;
 }
 
 .mb-64 {
-  margin-bottom: 6.4rem;
+  margin-bottom: 6.4rem !important;
 }
 
 .mx-64 {
@@ -1090,19 +1113,19 @@ a {
 }
 
 .ml-80 {
-  margin-left: 8rem;
+  margin-left: 8rem !important;
 }
 
 .mr-80 {
-  margin-right: 8rem;
+  margin-right: 8rem !important;
 }
 
 .mt-80 {
-  margin-top: 8rem;
+  margin-top: 8rem !important;
 }
 
 .mb-80 {
-  margin-bottom: 8rem;
+  margin-bottom: 8rem !important;
 }
 
 .mx-80 {
@@ -1154,19 +1177,19 @@ a {
 }
 
 .ml-96 {
-  margin-left: 9.6rem;
+  margin-left: 9.6rem !important;
 }
 
 .mr-96 {
-  margin-right: 9.6rem;
+  margin-right: 9.6rem !important;
 }
 
 .mt-96 {
-  margin-top: 9.6rem;
+  margin-top: 9.6rem !important;
 }
 
 .mb-96 {
-  margin-bottom: 9.6rem;
+  margin-bottom: 9.6rem !important;
 }
 
 .mx-96 {
@@ -1218,19 +1241,19 @@ a {
 }
 
 .ml-128 {
-  margin-left: 12.8rem;
+  margin-left: 12.8rem !important;
 }
 
 .mr-128 {
-  margin-right: 12.8rem;
+  margin-right: 12.8rem !important;
 }
 
 .mt-128 {
-  margin-top: 12.8rem;
+  margin-top: 12.8rem !important;
 }
 
 .mb-128 {
-  margin-bottom: 12.8rem;
+  margin-bottom: 12.8rem !important;
 }
 
 .mx-128 {
