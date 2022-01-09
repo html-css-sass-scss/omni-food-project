@@ -1,0 +1,74 @@
+@use "../abstract" as v;
+
+/********************************/
+/*Pricing Section*/
+/********************************/
+
+.section-pricing {
+  .pricing-plan {
+    border-radius: v.$border-radius-medium;
+    width: 75%;
+
+    &__starter {
+      padding: 4.6rem;
+      border: 2px solid v.$bg-lighter;
+    }
+
+    &__complete {
+      position: relative;
+      overflow: hidden;
+
+      &::after {
+        content: "best value";
+        position: absolute;
+        top: 7%;
+        right: -17%;
+
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: v.$font-weight-bold;
+        color: v.$dark-gray;
+        background-color: #ffd43b;
+        padding: 0.8rem 8rem;
+        transform: rotate(45deg);
+      }
+    }
+
+    &__header {
+      text-align: center;
+      margin-bottom: 4.8rem;
+
+      &--name {
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.75px;
+        font-weight: 600;
+        margin-bottom: 3.2rem;
+        color: v.$primary-dark;
+      }
+      &--price {
+        font-size: 6.2rem;
+        margin-bottom: 1.6rem;
+        color: v.$dark-gray;
+        font-weight: 600;
+
+        span {
+          display: inline-block;
+          font-size: 3rem;
+          font-weight: 500;
+          margin-right: 0.8rem;
+        }
+      }
+      &--text {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        color: v.$tertiary-dark;
+      }
+    }
+
+    &__sign-up {
+      text-align: center;
+      margin-top: 4.8rem;
+    }
+  }
+}

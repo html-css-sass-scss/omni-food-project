@@ -34,39 +34,17 @@
       color: v.$dark-gray;
     }
 
-    &__attribute-list {
-      &--item {
-        font-size: 1.8rem;
-        display: flex;
-        align-items: center;
-        gap: 1.6rem;
-
+    .list-item {
+      &--meal {
         &:not(:last-child) {
           margin-bottom: 2rem;
         }
       }
 
-      &--icon {
-        font-size: 2.4rem;
-        color: v.$primary;
-      }
-    }
-  }
-
-  .diets {
-    &__list-item {
-      font-size: 1.8rem;
-      display: flex;
-      align-items: center;
-      gap: 1.6rem;
-
-      &:not(:last-child) {
-        margin-bottom: 1.6rem;
-      }
-
       &-icon {
-        font-size: 3rem;
-        color: v.$primary;
+        &--meal {
+          font-size: 2.4rem;
+        }
       }
     }
   }

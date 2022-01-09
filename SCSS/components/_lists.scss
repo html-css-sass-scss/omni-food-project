@@ -1,0 +1,23 @@
+@use "../abstract" as v;
+
+/********************************/
+/*Lists*/
+/********************************/
+
+.list {
+  &-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+
+    &-icon {
+      font-size: 3rem;
+      color: v.$primary;
+    }
+  }
+}

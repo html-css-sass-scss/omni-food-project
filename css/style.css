@@ -93,6 +93,9 @@ a {
   display: grid;
   gap: 9.6rem 6.4rem;
 }
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
 
 .grid-ai-center {
   align-items: center;
@@ -100,6 +103,10 @@ a {
 
 .grid-ji-center {
   justify-items: center;
+}
+
+.grid-js-end {
+  justify-self: end;
 }
 
 .grid-col-1 {
@@ -184,6 +191,23 @@ a {
 }
 
 /********************************/
+/*Lists*/
+/********************************/
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+.list-item-icon {
+  font-size: 3rem;
+  color: #e67e22;
+}
+
+/********************************/
 /*Hero Section*/
 /********************************/
 .section-hero .hero {
@@ -191,6 +215,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 9.6rem;
+  padding: 0 3.2rem;
   margin: 0 auto;
   align-items: center;
 }
@@ -224,6 +249,9 @@ a {
 /********************************/
 /*Header Section*/
 /********************************/
+.header {
+  height: 9.6rem;
+}
 .header__logo {
   height: 2.2rem;
 }
@@ -340,31 +368,11 @@ a {
   font-weight: 600;
   color: #333;
 }
-.section-meals .meal__attribute-list--item {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-.section-meals .meal__attribute-list--item:not(:last-child) {
+.section-meals .meal .list-item--meal:not(:last-child) {
   margin-bottom: 2rem;
 }
-.section-meals .meal__attribute-list--icon {
+.section-meals .meal .list-item-icon--meal {
   font-size: 2.4rem;
-  color: #e67e22;
-}
-.section-meals .diets__list-item {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-.section-meals .diets__list-item:not(:last-child) {
-  margin-bottom: 1.6rem;
-}
-.section-meals .diets__list-item-icon {
-  font-size: 3rem;
-  color: #e67e22;
 }
 .section-meals .all-recipes {
   font-size: 1.8rem;
@@ -410,6 +418,68 @@ a {
 }
 .section-testimonials .gallery__item img:hover {
   transform: scale(1.1);
+}
+
+/********************************/
+/*Pricing Section*/
+/********************************/
+.section-pricing .pricing-plan {
+  border-radius: 11px;
+  width: 75%;
+}
+.section-pricing .pricing-plan__starter {
+  padding: 4.6rem;
+  border: 2px solid #fdf2e9;
+}
+.section-pricing .pricing-plan__complete {
+  position: relative;
+  overflow: hidden;
+}
+.section-pricing .pricing-plan__complete::after {
+  content: "best value";
+  position: absolute;
+  top: 7%;
+  right: -17%;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+.section-pricing .pricing-plan__header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.section-pricing .pricing-plan__header--name {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+  color: #cf711f;
+}
+.section-pricing .pricing-plan__header--price {
+  font-size: 6.2rem;
+  margin-bottom: 1.6rem;
+  color: #333;
+  font-weight: 600;
+}
+.section-pricing .pricing-plan__header--price span {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.section-pricing .pricing-plan__header--text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+.section-pricing .pricing-plan__sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
 }
 
 /********************************/
