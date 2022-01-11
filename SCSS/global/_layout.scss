@@ -10,6 +10,10 @@
   margin: 0 auto;
 }
 
+.d-grid {
+  display: grid;
+}
+
 .grid {
   display: grid;
   gap: v.$grid-row-gap v.$grid-column-gap;
@@ -17,6 +21,10 @@
   &:not(:last-child) {
     margin-bottom: 9.6rem;
   }
+}
+
+.grid--footer {
+  grid-template-columns: repeat(2, 1.5fr) repeat(3, 1fr);
 }
 
 .grid-ai-center {
@@ -35,7 +43,7 @@
   align-self: end;
 }
 
-$grid-columns: (1, 2, 3, 4);
+$grid-columns: (1, 2, 3, 4, 5);
 @each $el in $grid-columns {
   .grid-col-#{$el} {
     grid-template-columns: repeat($el, 1fr);

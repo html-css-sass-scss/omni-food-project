@@ -89,12 +89,20 @@ a {
   margin: 0 auto;
 }
 
+.d-grid {
+  display: grid;
+}
+
 .grid {
   display: grid;
   gap: 9.6rem 6.4rem;
 }
 .grid:not(:last-child) {
   margin-bottom: 9.6rem;
+}
+
+.grid--footer {
+  grid-template-columns: repeat(2, 1.5fr) repeat(3, 1fr);
 }
 
 .grid-ai-center {
@@ -127,6 +135,10 @@ a {
 
 .grid-col-4 {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-col-5 {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 /********************************/
@@ -605,6 +617,53 @@ a {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
+/********************************/
+/*Footer Section*/
+/********************************/
+.section-footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+.section-footer__logo > a {
+  display: inline-block;
+  margin-bottom: 3.2rem;
+}
+.section-footer__logo > ul li:not(:last-child) {
+  margin-right: 1.8rem;
+}
+.section-footer__logo > ul li > a .social-icon {
+  font-size: 2.4rem;
+}
+.section-footer__logo--copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+}
+.section-footer__heading {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+  font-weight: 500;
+}
+.section-footer__address address {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.section-footer__address address p:first-child {
+  margin-bottom: 2.4rem;
+}
+.section-footer__nav-list:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+.section-footer__nav-link:link, .section-footer__nav-link:visited {
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s ease-in-out;
+}
+.section-footer__nav-link:hover, .section-footer__nav-link:active {
+  color: #555;
+}
+
 /********************************/
 /*Padding and Margin Util classes*/
 /********************************/
